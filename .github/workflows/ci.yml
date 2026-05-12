@@ -11,7 +11,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v6
+      - name: Register local tap
+        run: brew tap KingPsychopath/tap "$GITHUB_WORKSPACE"
       - name: Install formula
-        run: brew install --build-from-source Formula/rdrop.rb
+        run: brew install --build-from-source KingPsychopath/tap/rdrop
       - name: Test formula
-        run: brew test rdrop
+        run: brew test KingPsychopath/tap/rdrop
