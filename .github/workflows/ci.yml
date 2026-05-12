@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-formula:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install formula
+        run: brew install --build-from-source Formula/rdrop.rb
+      - name: Test formula
+        run: brew test rdrop
