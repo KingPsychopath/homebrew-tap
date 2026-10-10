@@ -20,7 +20,7 @@ brew upgrade rdrop
 
 | Formula | Description |
 | --- | --- |
-| `rdrop` | Dependency-light CLI for managing Raindrop.io libraries |
+| `rdrop` | Find, review and organize Raindrop bookmarks from a shell or agent |
 
 ## Maintenance
 
@@ -30,5 +30,5 @@ For a new `raindrop-cli` release:
 
 1. Update `Formula/rdrop.rb` with the new tag URL.
 2. Update the `sha256` for the source archive.
-3. Run `brew install --build-from-source Formula/rdrop.rb`.
+3. Run `brew install --build-from-source KingPsychopath/tap/rdrop` after the tap update is available, then `brew test rdrop`.
 4. Commit and push the formula update.
