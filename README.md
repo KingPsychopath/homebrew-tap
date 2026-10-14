@@ -1,11 +1,11 @@
 # Homebrew Tap
 
-Homebrew tap for KingPsychopath CLI tools.
+Homebrew tap for machineyearningengineer CLI tools.
 
 ## Install `rdrop`
 
 ```bash
-brew tap KingPsychopath/tap
+brew tap machineyearningengineer/tap
 brew install rdrop
 ```
 
@@ -30,5 +30,5 @@ For a new `raindrop-cli` release:
 
 1. Update `Formula/rdrop.rb` with the new tag URL.
 2. Update the `sha256` for the source archive.
-3. Run `brew install --build-from-source KingPsychopath/tap/rdrop` after the tap update is available, then `brew test rdrop`.
+3. Run `brew install --build-from-source machineyearningengineer/tap/rdrop` after the tap update is available, then `brew test rdrop`.
 4. Commit and push the formula update.

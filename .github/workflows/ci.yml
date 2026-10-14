@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Register local tap
-        run: brew tap KingPsychopath/tap "$GITHUB_WORKSPACE"
+        run: brew tap machineyearningengineer/tap "$GITHUB_WORKSPACE"
       - name: Install formula
-        run: brew install --build-from-source KingPsychopath/tap/rdrop
+        run: brew install --build-from-source machineyearningengineer/tap/rdrop
       - name: Test formula
-        run: brew test KingPsychopath/tap/rdrop
+        run: brew test machineyearningengineer/tap/rdrop
